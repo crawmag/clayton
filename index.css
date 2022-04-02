@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------- Mobile View -------------------------------------- */
+@media only screen and (max-width: 600px) {
+        
+}
+
+/* ---------------------------------- Tablet View ------------------------------------- */
+@media only screen and (min-width: 600px) {
+    
+}
+
+
+/* ----------------------------------- Laptop View ----------------------------------- */
+@media only screen and (min-width: 992px){
+    
+}
+
+
+/* ------------------------------------ Desktop View --------------------------------- */
+@media only screen and (min-width: 1200px){
+    
+}
+
+/* ---------------------------------- Outside Media Queries ---------------------------- */
+
+.sectionHeader{
+ font-size: xx-large; 
+ margin: 5% auto;     
+}
+#name{
+    font-size: 2vw;
+}
