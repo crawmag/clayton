@@ -1,4 +1,35 @@
+#nav{
+    display: grid;
+    background-color: aquamarine;
+    padding: 2%;
+}
+#name{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: beige;
+}
+
+/* navbar */
 a{
     text-decoration: none;
     color: black;
+}
+#navbar{
+    justify-self: end;
+    grid-row: 1/2;
+    grid-column: 2/5;
+    /* margin-left: -20%; */
+}
+ul{
+    display: flex;
+    background-color: antiquewhite;
+    /* padding: 5%; */
+    /* margin: 5%; */
+}
+li{
+    list-style: none;
+    font-size: 1vw;
+    /* margin: auto 2%; */
+    /* padding: 5%; */
+    background-color: aqua;
 }
