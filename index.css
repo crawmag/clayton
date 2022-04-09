@@ -19,6 +19,11 @@
     .merch{
         width: 10vw;
     }
+    /* messing with making the pictures line up */
+    #digitalArt{
+        display: grid;
+        background-color: aquamarine;
+    }
 }
 
 
