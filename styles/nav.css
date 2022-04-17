@@ -1,16 +1,15 @@
 #nav {
-    position: sticky;
-    /* top: 0; */
-    /* width: 100%; */
-    padding: 5px;
+    position: fixed;
+    padding: 10px;
     margin: 0;
-    background-color: #101820ff;
     display: flex;
     z-index: 1;
     justify-content: space-between;
+    width: 100%;
+    top: 0;
+    overflow-x: hidden;
   }
 #name{
-    background-color: beige;
 }
 
 /* navbar */
@@ -21,13 +20,15 @@ a{
 #navbar{
     /* justify-self: end; */
 }
-ul{
-    display: flex;
-    background-color: antiquewhite;
+ul {
+    float: right; 
+    align-self: center;
 }
+
+
 li{
-    /* float: right; */
+    display: inline;
     list-style: none;
-    font-size: 1vw;
-    background-color: aqua;
+    font-size: 1.5vw;
+    margin: 10px;
 }
