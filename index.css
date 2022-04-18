@@ -22,6 +22,7 @@
     /* messing with making the pictures line up */
     #digitalArt{
         display: grid;
+        background-color: aqua;
     }
     /* modal img section */
   .myImg {
