@@ -2,14 +2,17 @@
     position: fixed;
     padding: 10px;
     margin: 0;
-    display: flex;
+    display: block;
     z-index: 1;
     justify-content: space-between;
     width: 100%;
-    top: 0;
+    top: 50px;
     overflow-x: hidden;
+    background-color: blueviolet;
   }
 #name{
+    text-align: center;
+    background-color: blueviolet;
 }
 
 /* navbar */
@@ -19,10 +22,10 @@ a{
 }
 #navbar{
     /* justify-self: end; */
+    text-align: center;
 }
 ul {
-    float: right; 
-    align-self: center;
+    text-align: center;
 }
 
 

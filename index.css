@@ -118,7 +118,7 @@
 
 /* ---------------------------------- Outside Media Queries ---------------------------- */
 body{
-    padding-top: 5%;
+    /* padding-top: 5%; */
 }
 .sectionHeader{
  font-size: xx-large; 
@@ -126,4 +126,5 @@ body{
 }
 #name{
     font-size: 2vw;
+    margin: 1% auto;
 }
