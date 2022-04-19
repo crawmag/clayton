@@ -24,6 +24,7 @@
         display: grid;
         background-color: aqua;
     }
+    
     /* modal img section */
   .myImg {
     border-radius: 5px;
@@ -102,6 +103,14 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* merchandise images */
+  .merchandise{
+    margin: 10%;
+    display: grid;
+    
+
+  }
 }
 
 
@@ -123,8 +132,4 @@ body{
 .sectionHeader{
  font-size: xx-large; 
  margin: 5% auto;     
-}
-#name{
-    font-size: 2vw;
-    margin: 1% auto;
 }
