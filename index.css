@@ -12,21 +12,29 @@
 /* ---------------------------------- Tablet View ------------------------------------- */
 @media only screen and (min-width: 600px) {
     /* these are for each merchandise sections  */
-    .sectionmerch{
+    .sectionHeader{
+      padding-top: 10%;
+    }
+    #merchandiseAll, .sectionmerch{
         display: block;
         margin: auto 20%;
     }
-    .merch{
-        width: 10vw;
+    #merchandiseAll{
+      margin-top: 10%;
     }
+    /* merchandise images */
+  .merchandise{
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    /* grid-template-rows: repeat(4, 1fr); */
+    gap: 50px;
+  }
     /* messing with making the pictures line up */
-    #digitalArt{
-        display: grid;
-        background-color: aqua;
-    }
     
     /* modal img section */
-  .myImg {
+  .merch{
+    width: 10vw;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -104,13 +112,7 @@
     cursor: pointer;
   }
 
-  /* merchandise images */
-  .merchandise{
-    margin: 10%;
-    display: grid;
-    
-
-  }
+  
 }
 
 
