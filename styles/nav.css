@@ -3,42 +3,186 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#nav {
-    position: fixed;
-    padding: 10px;
-    margin: 0;
-    display: block;
-    z-index: 1;
-    justify-content: space-between;
-    width: 100%;
-    top: 0;
-    overflow-x: hidden;
-    background-color: blueviolet;
+/* mobile and tablet view */
+@media only screen and (max-width: 992px){
+     /* nav section */
+     a{
+         text-decoration: none;
+         color: aliceblue;
+     }
+     li{
+         list-style: none;
+     }
+     #navbar{
+         display: none;
+     }
+  /* hamburger menu btn */
+  .nav-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+    border: 1px solid #ffdd96;
+    margin-left: 2%;
   }
-#name{
-    text-align: center;
-    font-size: 2vw;
-    margin: 1% auto;
+  .nav-btn-burger{
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before,
+  .nav-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before{
+    transform: translateY(-5px);
+  }
+  .nav-btn-burger::after{
+    transform: translateY(5px);
+  }
+  /* animation for nav burger */
+
+  .nav-btn.open .nav-btn-burger{
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  .nav-btn.open .nav-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .nav-btn.open .nav-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+  .modal {
+    display: none;/* Hidden by default */
+    position: fixed;
+    z-index: 1; /*Sit on top*/
+    padding-top: 90px; /* Location of the box */
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /*Enable scroll if needed*/
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    border-radius: 10px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #530044;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid #3358dc; */
+    width: 75%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  #nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #101820ff;
+    display: flex;
+    z-index: 1;
+  }
+  #left-nav{
+    display: none;
+  }
+  #right-nav {
+    display: flex;
+    margin: auto 5% auto auto;
+  }
+  .right {
+    margin-left: 25px;
+  }
+
 }
 
-/* navbar */
-a{
-    text-decoration: none;
-    color: black;
-}
-#navbar{
-    /* justify-self: end; */
-    text-align: center;
-}
-ul {
-    text-align: center;
-}
+/* laptop and desktop view */
+@media only screen and (min-width: 992px){
+    #myModal{
+        display: none;
+      }
+    #nav {
+        position: fixed;
+        padding: 10px;
+        margin: 0;
+        display: block;
+        z-index: 1;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+        overflow-x: hidden;
+        background-color: blueviolet;
+    }
+    #name{
+        text-align: center;
+        font-size: 2vw;
+        margin: 1% auto;
+    }
+
+    /* navbar */
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #navbar{
+        /* justify-self: end; */
+        text-align: center;
+    }
+    ul {
+        text-align: center;
+    }
 
 
-li{
-    display: inline;
-    list-style: none;
-    font-size: 1.5vw;
-    margin: 10px;
+    li{
+        display: inline;
+        list-style: none;
+        font-size: 1.5vw;
+        margin: 10px;
+    }
 }
