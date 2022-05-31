@@ -233,6 +233,8 @@
 /* ---------------------------------- Outside Media Queries ---------------------------- */
 body{
     /* padding-top: 5%; */
+    background-image: url(./photos/landingbackground.jpg);
+    background-size: cover;
 }
 .sectionHeader{
  font-size: xx-large; 
