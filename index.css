@@ -214,6 +214,10 @@
     text-decoration: none;
     cursor: pointer;
   }
+  /* follow section */
+  .social{
+    width: 50px;
+  }
 
   
 }
